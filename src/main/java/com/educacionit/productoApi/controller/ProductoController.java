@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.educacionit.productoApi.model.Producto;
 
+
+
 @RestController
 @RequestMapping("/producto")
 public class ProductoController {
@@ -14,7 +16,8 @@ public class ProductoController {
 	
 	@GetMapping("/get")
 	public ResponseEntity<Producto> getProducto() {
-		Producto producto = new Producto(300.2,"Papas","Verduras");
+		Producto producto = new Producto(1, 33.20 , "Papa", "Verdura");
+		
 		return ResponseEntity.ok(producto);
 		
 	}
