@@ -1,4 +1,4 @@
-package com.educacionIT.productoApi.model;
+package com.example.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
