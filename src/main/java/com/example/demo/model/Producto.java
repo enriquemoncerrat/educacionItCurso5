@@ -16,12 +16,21 @@ public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     @Column
     private String nombre;
+
     @Column
     private String descripcion;
+
     @Column
     private double precio;
+
+
+    @Column(nullable = true)
+    @OneToOne
+    @JoinColumn(name = "detalle_producto")
+    private Detalle detalle;
 
 
 }
